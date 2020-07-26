@@ -8,6 +8,7 @@ $aero-blue: #d4f4ddff; */
 {
     background-color:#1D3354 ;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 90px;
     
@@ -105,6 +106,7 @@ h1 strong
     background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -127,6 +129,7 @@ h1 strong
     padding: 20px;
     background: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -160,8 +163,7 @@ h1 strong
 }
 .project_imageContainer
 {
-    width: 500px;
-    height: 400px;
+    margin: 0;
 }
 .event-list
 {
@@ -222,6 +224,7 @@ h1 strong
     height: 150px;
     background: darkgrey;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -276,6 +279,7 @@ h1 strong
     height: 60px;
     background-color: #467599;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -291,11 +295,44 @@ h1 strong
 }
 
 .container{
-    width: 1020px;
+    max-width: 1020px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/* desktop first empezar desde el MQ más grande */
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+        justify-content: center;
+    }
+    .header ul{
+        display: block;
+    }
+    .header ul li{
+        height: 50px;
+    }
+    .header a{
+        display: flex;
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    
+}
+@media screen and (max-width: 320px){
+    
 }
