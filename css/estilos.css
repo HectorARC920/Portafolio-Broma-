@@ -134,7 +134,7 @@ h1 strong
     justify-content: space-between;
 }
 .project_image{
-    margin: 0px 80px;
+    margin: 0px auto;
 }
 .project strong
 {
@@ -159,10 +159,12 @@ h1 strong
 
 .project_details
 {
-    width: 500px;
+    width: 50%;
 }
 .project_imageContainer
 {
+    text-align: center;
+    width: 50%;
     margin: 0;
 }
 .event-list
@@ -329,9 +331,45 @@ h1 strong
     .header .logo{
         text-align: center;
     }
+    .project{
+        display: block;
+    }
+    .project .project_details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project_imageContainer{
+        width: auto;
+    }
+    .project .project_image{
+        max-width: 100%;
+    }
+    .project_course, .project_date, .project_url {
+        margin: .4em 0;
+    }
+    .porject_title{
+        font-size: 1.5em;
+        margin-bottom: .3em 0;
+    }
+    .project_url{
+        font-size: 1em;
+    }
+    .project_course{
+        font-size: 1.2em;
+    }
+    .project_date{
+        font-size: 1.2em;
+    }
+    .project_description{
+        font-size: 1em;
+    }
+
 }
 @media screen and (max-width: 480px){
-    
+    .project .project_details{
+        width: auto;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 320px){
     
