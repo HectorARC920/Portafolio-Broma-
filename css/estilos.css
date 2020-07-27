@@ -310,6 +310,27 @@ h1 strong
 /* desktop first empezar desde el MQ más grande */
 
 @media screen and (max-width: 1024px){
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        object-position: 0% 51%;
+        max-height: 234px;
+    }
 }
 @media screen and (max-width: 767px){
     .header{
@@ -377,6 +398,16 @@ h1 strong
 
 }
 @media screen and (max-width: 480px){
+    .hero{
+        padding-bottom: 0em;
+    }
+    .hero h1{
+        font-size: 1.5em;
+        background-color: rgba(0,0,0,.1);
+    }
+    .hero-image{
+        filter: opacity(80%) blur(1px);
+    }
     .project .project_details{
         width: auto;
         font-size: 12px;
@@ -400,5 +431,9 @@ h1 strong
     }
 }
 @media screen and (max-width: 320px){
-    
+    .hero h1{
+        font-size: 1em;
+        line-height: 1.5em;
+
+    }
 }
