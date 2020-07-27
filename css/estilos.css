@@ -310,7 +310,6 @@ h1 strong
 /* desktop first empezar desde el MQ más grande */
 
 @media screen and (max-width: 1024px){
-
 }
 @media screen and (max-width: 767px){
     .header{
@@ -381,6 +380,23 @@ h1 strong
     .project .project_details{
         width: auto;
         font-size: 12px;
+    }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .form_email button
+    {
+        margin: 1em auto;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer div{
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 320px){
